@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<title>Music Player</title>
+	</head>
+	<body>
+		<div class="container my-5">
+			<h1 class="mb-5">Music Player</h1>
+			<audio src="music/track.mp3" id="audio"></audio>
+			<div class="card">
+				<div class="card-body">
+					<div class="row d-flex align-items-center">
+						<div class="col-1">
+							<button class="btn btn-primary" id="play-pause"><i class="fas fa-play"></i></button>
+						</div>
+						<div class="col-2">
+							<span id="time-elapsed">0:00</span> / <span id="total-time">0:00</span>
+						</div>
+						<div class="col">
+							<input class="form-range" type="range" id="duration-bar" value="0">
+						</div>
+						<div class="col-1">
+							<button class="btn btn-primary" id="mute"><i class="fas fa-volume-up"></i></button>
+						</div>
+						<div class="col-2">
+							<input class="form-range" type="range" id="volume-bar" value="100">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5">
+				<small>Developed by <a href="https://robertd.co.uk">Robert Dixon</a>.</small>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
